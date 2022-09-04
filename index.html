@@ -224,6 +224,11 @@
 			onload();
 
 			function onload() {
+				var mp3Url ="./res/raw-assets/start/hawen.mp3";
+				var player = new Audio(mp3Url);
+				player.play()
+				// player.pause()
+				// player.load()
 				var winHeight = document.documentElement.clientHeight;
 				document.getElementById("canvasDiv").style.height = winHeight + "px";
 			};
